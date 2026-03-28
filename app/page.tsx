@@ -15,7 +15,7 @@ import LineWaves from '@/components/ui/LineWaves';
 const BotCard = ({ title, iconSrc, href, description }: { title: string, iconSrc: string, href: string, description: string }) => (
     <div className="group p-5 bg-card/60 backdrop-blur-md border rounded-3xl hover:border-blue-500/50 transition-all flex flex-col h-full shadow-lg">
       <div className="flex items-center gap-4 mb-4">
-        <div className="w-14 h-14 rounded-full bg-muted overflow-hidden border-2 border-transparent transition-all shrink-0">
+        <div className="w-14 h-14 rounded-full bg-muted overflow-hidden transition-all shrink-0">
           <img src={iconSrc} alt={title} className="w-full h-full object-cover" />
         </div>
         <h4 className="font-bold text-xl tracking-tight">{title}</h4>

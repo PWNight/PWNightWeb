@@ -15,7 +15,7 @@ import LineWaves from '@/components/ui/LineWaves';
 const BotCard = ({ title, iconSrc, href, description }: { title: string, iconSrc: string, href: string, description: string }) => (
     <div className="group p-5 bg-card/60 backdrop-blur-md border rounded-3xl hover:border-blue-500/50 transition-all flex flex-col h-full shadow-lg">
       <div className="flex items-center gap-4 mb-4">
-        <div className="w-14 h-14 rounded-full bg-muted overflow-hidden transition-all shrink-0">
+        <div className="w-14 h-14 rounded-full overflow-hidden transition-all shrink-0">
           <img src={iconSrc} alt={title} className="w-full h-full object-cover" />
         </div>
         <h4 className="font-bold text-xl tracking-tight">{title}</h4>
@@ -65,9 +65,8 @@ export default function PortfolioPage() {
         )}
 
         <main className="flex flex-col flex-1 p-4 sm:p-6 max-w-6xl mx-auto w-full gap-12 py-20 relative z-10">
-
           <section className="flex flex-col md:flex-row gap-8 items-start animate-in fade-in slide-in-from-top-4 duration-700">
-            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-border shrink-0 shadow-inner">
+            <div className="w-32 h-32 rounded-full overflow-hidden shrink-0 shadow-inner">
               <img src="/avatar.url" alt="Родион Гошев" className="w-full h-full object-cover" />
             </div>
             <div className="flex-1">
